@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 laba</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="blockX" class="blockx">
+            <img src="pfp/1.png" alt="Icon">
+            LLC
+        </div>
+        <div id="blockY" class="blocky">
+            Live Love Cats
+        </div>
+        <div class="block1"> 
+            <ol>
+                <li><a href="kit2.html" target="_blank"><img src="pfp/2.png" alt="2 page"></a></li>
+                <li><a href="#" target="_blank"><img src="pfp/3.png" alt="3 page"></a></li>
+                <li><a href="#" target="_blank"><img src="pfp/4.png" alt="4 page"></a></li>
+                <li><a href="#" target="_blank"><img src="pfp/5.png" alt="5 page"></a></li>
+            </ol> 
+        </div>
+        <div id="block2" class="block2">
+            <p>
+                Each cat has a distinct personality, with some being more social and others preferring solitude. 
+                Interestingly, cats groom themselves regularly, not just to keep clean, but also to regulate their body temperature and manage stress.
+            </p>
+            <img src="pfp/7.png" alt="right side cat">
+        </div>
+        <div id="block3" class="block3">
+            <p> Cats have a strong bond with their human companions, often showing affection by rubbing against them, purring, or kneading with their paws. 
+                Their mysterious and playful behavior, combined with moments of warmth and companionship makes them endlessly fascinating to cat lovers.
+            </p>
+            <img src="pfp/6.png" alt="left side cat">
+        </div>
+        <div class="block4">
+            DID YOU KNOW?
+        </div>  
+        <div id="block5" class="block5">
+            <ol>
+                <li>Cats sleep a lot: On average, cats spend around 13 to 16 hours a day sleeping. This helps conserve their energy for short bursts of activity, similar to their wild ancestors.</li>
+                <li>Purring serves multiple purposes: Cats purr when they’re happy, but they also purr to comfort themselves when stressed, in pain, or even while recovering from illness.</li>
+                <li>Unique “meows”: Cats develop specific meows for communicating with their owners, and some cats will alter their vocalizations to get attention, food, or affection.</li>
+                <li>Cats are territorial: Cats are very territorial animals, often marking their space with scent glands located on their face, paws, and tail. This behavior helps them establish boundaries with other animals.</li>
+                <li>Cats have “right” or “left” paws: Much like humans being right- or left-handed, cats tend to favor one paw over the other for tasks like grabbing objects or stepping forward.</li>
+                <li>They can’t taste sweetness: Unlike humans, cats lack taste receptors for sweetness, meaning sugary treats don’t hold the same appeal for them.</li>
+            </ol> 
+            <p id="areaResultBlock"></p>
+        </div>
+        <div class="block6">
+            @darpfnis
+        </div>
+
+        <!-- Управління формами -->
+        <div class="controls">
+            <button id="swapBlocksButton">Swap Block X and Y</button>
+            <button id="toggleAreaFormButton">Toggle Rectangle Area Form</button>
+            <button id="toggleCSSFormButton">Toggle CSS Customization Form</button>
+        </div>
+
+        <!-- Форма для обчислення площі -->
+        <form id="areaForm" style="display: none;">
+            <h3>Calculate Rectangle Area</h3>
+            <label for="length">Length:</label>
+            <input type="number" id="length" required>
+            <label for="width">Width:</label>
+            <input type="number" id="width" required>
+            <button type="submit">Calculate</button>
+            <p id="calculationResult"></p>
+        </form>
+
+        <!-- Форма для мінімальних чисел -->
+        <form id="minNumbersForm" style="display: none;">
+            <h3>Find Minimum Numbers</h3>
+            <label for="numbersInput">Enter numbers (comma-separated):</label>
+            <input type="text" id="numbersInput" required>
+            <button type="submit">Find</button>
+        </form>
+
+        <!-- Форма для CSS -->
+        <div id="cssFormContainer" style="display: none;">
+            <form id="cssForm">
+                <h3>Customize CSS</h3>
+                <label for="cssSelector">Selector:</label>
+                <input type="text" id="cssSelector" placeholder="e.g., .blockx">
+                <label for="cssProperty">Property:</label>
+                <input type="text" id="cssProperty" placeholder="e.g., color">
+                <label for="cssValue">Value:</label>
+                <input type="text" id="cssValue" placeholder="e.g., red">
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+        <label>
+            <input type="checkbox" id="italicCheckbox"> Italicize Block 3 Text
+        </label>
+    </div>
+</body>
+</html>
